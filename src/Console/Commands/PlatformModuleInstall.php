@@ -11,9 +11,7 @@ class PlatformModuleInstall extends Command
      *
      * @var string
      */
-    protected $signature = 'module:install
-        {module}
-    ';
+    protected $signature = 'module:install';
 
     /**
      * The console command description.
