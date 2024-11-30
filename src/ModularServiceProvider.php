@@ -10,6 +10,8 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Http\Resources\Json\JsonResource;
 use CitraGroup\Platform\Console\Commands\PlatformInstall;
+use Citrapp\Platform\Console\Commands\PlatformModulePull;
+use Citrapp\Platform\Console\Commands\PlatformModuleUpdate;
 use CitraGroup\Platform\Console\Commands\PlatformModuleList;
 use CitraGroup\Platform\Console\Commands\PlatformModuleSeed;
 use CitraGroup\Platform\Console\Commands\PlatformModuleClone;
@@ -79,7 +81,9 @@ class ModularServiceProvider extends ServiceProvider
                 PlatformModuleInstall::class,
                 PlatformModuleList::class,
                 PlatformModuleMigrate::class,
-                PlatformModuleSeed::class
+                PlatformModulePull::class,
+                PlatformModuleSeed::class,
+                PlatformModuleUpdate::class
             ]);
         }
     }
