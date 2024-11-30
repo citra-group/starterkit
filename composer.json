@@ -14,13 +14,13 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "CitraGroup\\Platform\\": "src/"
+            "Citrapp\\Platform\\": "src/"
         }
     },
     "extra": {
 		"laravel": {
 			"providers": [
-				"CitraGroup\\Platform\\ModularServiceProvider"
+				"Citrapp\\Platform\\ModularServiceProvider"
 			]
 		}
 	},
