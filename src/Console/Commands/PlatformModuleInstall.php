@@ -1,6 +1,6 @@
 <?php
 
-namespace CitraGroup\Platform\Console\Commands;
+namespace Citrapp\Platform\Console\Commands;
 
 use Illuminate\Console\Command;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace CitraGroup\Platform\Console\Commands;
+namespace Citrapp\Platform\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
@@ -179,7 +179,7 @@ class PlatformInstall extends Command
         if (str_contains($content, 'SESSION_DOMAIN=null')) {
             (new Filesystem())->replaceInFile(
                 'SESSION_DOMAIN=null',
-                'SESSION_DOMAIN=.devcitragroup.test',
+                'SESSION_DOMAIN=.devcitrapp.test',
                 $envFile,
             );
         }
@@ -195,7 +195,7 @@ class PlatformInstall extends Command
                     'DB_QUEUE_BATCH_TABLE=system_job_batches' . PHP_EOL .
                     'DB_QUEUE_FAILED_TABLE=system_failded_jobs' . PHP_EOL .
                     'SESSION_TABLE=system_sessions' . PHP_EOL .
-                    'SANCTUM_STATEFUL_DOMAINS=hmr.devcitragroup.test:3000',
+                    'SANCTUM_STATEFUL_DOMAINS=hmr.devcitrapp.test:3000',
                 $envFile,
             );
         }

@@ -1,10 +1,10 @@
 <?php
 
-namespace CitraGroup\Platform\Console\Commands;
+namespace Citrapp\Platform\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Bus;
-use CitraGroup\Platform\Services\GitModule;
+use Citrapp\Platform\Services\GitModule;
 use Symfony\Component\Process\Process;
 
 class PlatformModuleDelete extends Command

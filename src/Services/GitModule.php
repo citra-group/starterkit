@@ -1,6 +1,6 @@
 <?php
 
-namespace CitraGroup\Platform\Services;
+namespace Citrapp\Platform\Services;
 
 use Symfony\Component\Process\Process;
 use Symfony\Component\Process\Exception\ProcessFailedException;
@@ -69,7 +69,7 @@ class GitModule
         $process = Process::fromShellCommandline('git rev-parse --verify HEAD 2> /dev/null');
         $process->setWorkingDirectory($directory);
         $process->run();
-        
+
         if (!$process->isSuccessful()) {
             throw new ProcessFailedException($process);
         }

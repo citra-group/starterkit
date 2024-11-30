@@ -1,6 +1,6 @@
 <?php
 
-namespace CitraGroup\Platform\Http\Middleware;
+namespace Citrapp\Platform\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;

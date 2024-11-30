@@ -1,6 +1,6 @@
 <?php
 
-namespace CitraGroup\Platform;
+namespace Citrapp\Platform;
 
 use SplFileInfo;
 use ReflectionClass;

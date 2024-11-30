@@ -1,5 +1,5 @@
 {
-    "name": "citra-group/platform",
+    "name": "citrapp/platform",
     "description": "Citra Group Web Application Platform",
     "type": "library",
     "require": {

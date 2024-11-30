@@ -1,6 +1,6 @@
 <?php
 
-namespace CitraGroup\Platform;
+namespace Citrapp\Platform;
 
 use Laravel\Fortify\Fortify;
 use Illuminate\Support\Facades\URL;
@@ -9,15 +9,15 @@ use Illuminate\Support\Facades\Cache;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Http\Resources\Json\JsonResource;
-use CitraGroup\Platform\Console\Commands\PlatformInstall;
+use Citrapp\Platform\Console\Commands\PlatformInstall;
 use Citrapp\Platform\Console\Commands\PlatformModulePull;
 use Citrapp\Platform\Console\Commands\PlatformModuleUpdate;
-use CitraGroup\Platform\Console\Commands\PlatformModuleList;
-use CitraGroup\Platform\Console\Commands\PlatformModuleSeed;
-use CitraGroup\Platform\Console\Commands\PlatformModuleClone;
-use CitraGroup\Platform\Console\Commands\PlatformModuleDelete;
-use CitraGroup\Platform\Console\Commands\PlatformModuleInstall;
-use CitraGroup\Platform\Console\Commands\PlatformModuleMigrate;
+use Citrapp\Platform\Console\Commands\PlatformModuleList;
+use Citrapp\Platform\Console\Commands\PlatformModuleSeed;
+use Citrapp\Platform\Console\Commands\PlatformModuleClone;
+use Citrapp\Platform\Console\Commands\PlatformModuleDelete;
+use Citrapp\Platform\Console\Commands\PlatformModuleInstall;
+use Citrapp\Platform\Console\Commands\PlatformModuleMigrate;
 
 class ModularServiceProvider extends ServiceProvider
 {
